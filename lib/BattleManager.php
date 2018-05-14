@@ -36,8 +36,6 @@ class BattleManager
 
         $ship1->setStrength($ship1Health);
         $ship2->setStrength($ship2Health);
-        var_dump($ship1->getStrength(),
-        die;
 
         if ($ship1Health <= 0 && $ship2Health <= 0) {
             // they destroyed each other
