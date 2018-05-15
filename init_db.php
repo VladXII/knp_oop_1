@@ -16,7 +16,7 @@ $pdoDatabase->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $pdoDatabase->exec('CREATE DATABASE IF NOT EXISTS oo_battle');
 
 /*
- * CREATE THE TABLE
+ * CREATE TH                    E TABLE
  */
 $pdo = new PDO('mysql:host=localhost;dbname='.$databaseName, $databaseUser, $databasePassword);
 $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
