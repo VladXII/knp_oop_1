@@ -10,7 +10,7 @@ class ShipLoader
 
     private $dbPass;
 
-    public function __construct(PdoShipStorage $shipStorage)
+    public function __construct(AbstractShipStorage $shipStorage)
     {
         $this->shipStorage = $shipStorage;
     }
@@ -37,7 +37,7 @@ class ShipLoader
      */
     public function findOneById($id)
     {
-        $shipArray = $this->shipStorage->fetchSingleShipData();
+        $shipArray = $this->shipStorage->fetchSingleShipData($id);
 
         return $this->createShipFromData($shipArray);
     }
