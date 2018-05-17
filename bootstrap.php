@@ -8,7 +8,7 @@ require_once __DIR__.'/lib/Service/ShipLoader.php';
 require_once __DIR__.'/lib/Model/BattleResult.php';
 require_once __DIR__.'/lib/Service/Container.php';
 require_once __DIR__.'/lib/Model/RebelShip.php';
-require_once __DIR__.'/lib/Service/AbstractShipStorage.php';
+require_once __DIR__.'/lib/Service/ShipStorageInterface.php';
 require_once __DIR__.'/lib/Service/PdoShipStorage.php';
 require_once __DIR__.'/lib/Service/JsonFileShipStorage.php';
 
